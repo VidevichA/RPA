@@ -1,0 +1,142 @@
+﻿{
+  "Metadata": {
+    "Id": "b655c394-7d57-4767-b016-a53eecf5db02",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "FindedCarsWithMaxAndMinPrices",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "label": "Table",
+        "cellAlignment": "left",
+        "key": "table",
+        "type": "table",
+        "numRows": 2,
+        "input": false,
+        "tableView": false,
+        "rows": [
+          [
+            {
+              "components": [
+                {
+                  "content": "Car with max price:",
+                  "key": "label",
+                  "input": false,
+                  "tableView": false,
+                  "label": "Label",
+                  "type": "label"
+                }
+              ]
+            },
+            {
+              "components": [
+                {
+                  "content": "{{data.in_CarWithMaxPriceName}}",
+                  "key": "in_CarWithMaxPriceName",
+                  "input": false,
+                  "tableView": false,
+                  "label": "Label",
+                  "type": "label"
+                }
+              ]
+            },
+            {
+              "components": [
+                {
+                  "content": "{{data.in_CarWithMaxPricePrice}} BYN",
+                  "key": "in_CarWithMaxPricePrice",
+                  "input": false,
+                  "tableView": false,
+                  "label": "Label",
+                  "type": "label"
+                }
+              ]
+            },
+            {
+              "components": [
+                {
+                  "label": "go to car with max price",
+                  "action": "event",
+                  "showValidations": false,
+                  "tableView": false,
+                  "key": "url",
+                  "type": "button",
+                  "input": true,
+                  "event": "go to car with max price"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "components": [
+                {
+                  "content": "Car with min price:",
+                  "key": "label1",
+                  "input": false,
+                  "tableView": false,
+                  "label": "Label",
+                  "type": "label"
+                }
+              ]
+            },
+            {
+              "components": [
+                {
+                  "content": "{{data.in_CarWithMinPriceName}}",
+                  "key": "in_CarWithMinPriceName",
+                  "input": false,
+                  "tableView": false,
+                  "label": "Label",
+                  "type": "label"
+                }
+              ]
+            },
+            {
+              "components": [
+                {
+                  "content": "{{data.in_CarWithMinPricePrice}} BYN",
+                  "key": "in_CarWithMinPricePrice",
+                  "input": false,
+                  "tableView": false,
+                  "label": "Label",
+                  "type": "label"
+                }
+              ]
+            },
+            {
+              "components": [
+                {
+                  "label": "go to car with min price",
+                  "action": "event",
+                  "showValidations": false,
+                  "tableView": false,
+                  "key": "click1",
+                  "type": "button",
+                  "input": true
+                }
+              ]
+            }
+          ]
+        ],
+        "numCols": 4
+      },
+      {
+        "label": "Exit",
+        "action": "event",
+        "showValidations": false,
+        "theme": "danger",
+        "tableView": false,
+        "key": "exit",
+        "type": "button",
+        "input": true
+      }
+    ]
+  }
+}

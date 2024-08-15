@@ -1,0 +1,74 @@
+﻿{
+  "Metadata": {
+    "Id": "ba71cd34-3259-4e43-83c2-8f43cdf8307d",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "CarInfo",
+    "Theme": "Sandstone",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "tag": "h4",
+        "content": "Enter car info",
+        "key": "TitleLabel",
+        "input": false,
+        "tableView": false,
+        "label": "Label",
+        "type": "label"
+      },
+      {
+        "label": "Brand",
+        "tableView": true,
+        "validate": {
+          "required": true
+        },
+        "key": "out_Brand",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Model",
+        "tableView": true,
+        "validate": {
+          "required": true
+        },
+        "key": "out_Model",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Minimum price (BYN)",
+        "tableView": true,
+        "validate": {
+          "pattern": "(0|[1-9]\\d*)$"
+        },
+        "key": "out_MinimumPrice",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Maximum price (BYN)",
+        "tableView": true,
+        "validate": {
+          "pattern": "(0|[1-9]\\d*)$"
+        },
+        "key": "out_MaximumPrice",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "label": "Submit",
+        "tableView": false,
+        "key": "submit",
+        "type": "button",
+        "input": true,
+        "saveOnEnter": true
+      }
+    ]
+  }
+}
