@@ -12,10 +12,11 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "InvoicesFolder&Sequence_1",
-        "dt_FilteredInvioces&Sequence_1",
+        "Date&Sequence_1",
         "dt_Invoices&Sequence_1",
-        "Date&Sequence_1"
+        "dt_FilteredInvioces&Sequence_1",
+        "InvoicesFolder&Sequence_1",
+        "downloadedFile&Sequence_8"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
