@@ -1,0 +1,199 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransactionItem&Flowchart_1",
+        "Taxonomy&Flowchart_1",
+        "OutputFilePath&Flowchart_1",
+        "DocumentText&Flowchart_1",
+        "DOM&Flowchart_1",
+        "DocumentPath&Flowchart_1",
+        "InvoiceFilePath&Flowchart_1",
+        "ClassificationResults&Flowchart_1",
+        "ClassificationSuccess&Flowchart_1",
+        "ExtractionResults&Flowchart_1",
+        "DataSet&Flowchart_1",
+        "dt_Restult&Flowchart_1",
+        "dt_ColumnNames&Flowchart_1",
+        "SystemException&Flowchart_1",
+        "Config&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ProcessWorkflows/GetTransactionData.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "out_InvoiceFilePath",
+        "out_TransactionItem"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ProcessWorkflows/Initialize.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_Empty&Sequence_1",
+        "OutputFile&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_SystemException",
+        "out_Config",
+        "out_dt_ColumnNames",
+        "out_InvoicesDataFilePath",
+        "out_DocTaxonomy"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ProcessWorkflows/EndProcess.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "in_OutputFilePath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "DocumentProcessingWorkflows/Digitize.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_DocumentPath",
+        "out_DOM",
+        "out_DocumentText"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "DocumentProcessingWorkflows/Classify.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "out_ClassificationResults",
+        "in_Taxonomy",
+        "in_DocumentText",
+        "in_DOM",
+        "in_DocumentPath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "DocumentProcessingWorkflows/Extract.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "out_ExtractionResults",
+        "in_DOM",
+        "in_ClassificationResult",
+        "in_DocumentText",
+        "in_Taxonomy",
+        "in_DocumentPath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "DocumentProcessingWorkflows/CheckClassificationResults.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "out_ClassificationSuccess",
+        "in_ExpectedType",
+        "in_ClassificationResults"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ProcessWorkflows/WriteInvoiceIntoFile.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TotalDue&Sequence_7",
+        "CompanyName&Sequence_7",
+        "InvoiceDate&Sequence_7",
+        "InvoiceNo&Sequence_7",
+        "DueDate&Sequence_7",
+        "ID&Sequence_7",
+        "dt_Result&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_dt_Template",
+        "in_OutputFilePath",
+        "in_dt_DataTableAfterDU",
+        "in_TransactionItem"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ProcessWorkflows/ApplyConfig.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_Assets&Sequence_1",
+        "dt_Settings&Sequence_1",
+        "AssetValue&TryCatch_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_ConfigFile",
+        "out_Config",
+        "in_ConfigSheets"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ProcessWorkflows/ProcessInvoice.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ExtractedData&Sequence_1",
+        "DataSet&Sequence_1",
+        "ExtractionResults&Sequence_1",
+        "ClassificationResults&Sequence_1",
+        "DocumentText&Sequence_1",
+        "DOM&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "in_OutputFilePath",
+        "in_dt_ColumnNames",
+        "in_Taxonomy",
+        "in_TransactionItem",
+        "in_DocumentPath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ProcessWorkflows/GetTransactionItem.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "out_TransactionItem"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
