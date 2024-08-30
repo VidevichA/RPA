@@ -12,13 +12,57 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "Config&Sequence_1",
         "Date&Sequence_1",
         "dt_Invoices&Sequence_1",
         "dt_FilteredInvioces&Sequence_1",
-        "InvoicesFolder&Sequence_1",
-        "downloadedFile&Sequence_8"
+        "InvoicesFolder&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "GetInvoicesFromWebsite.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "WebsiteToGetInvoices&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_dt_Invoices"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ProcessInvoices.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "InvoicesFolderPath&Sequence_1",
+        "FolderPath&Sequence_3",
+        "FolderInfo&Sequence_4",
+        "FolderExists&Sequence_1",
+        "InvoicesFolder&Sequence_1",
+        "downloadedFile&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "in_dt_Invoices"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ReadConfig.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_Assets&Sequence_1",
+        "AssetValue&TryCatch_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_Config",
+        "in_ConfigFile"
+      ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }
